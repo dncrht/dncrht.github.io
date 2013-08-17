@@ -1,0 +1,7 @@
+title: A blog for untweetable thoughts
+description: Because tweeter is not enough
+
+exclude: ['LICENSE', 'README.md', '.rbenv-version', 'nbproject', '*.less']
+
+markdown: redcarpet
+pygments: true
