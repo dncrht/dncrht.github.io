@@ -1,0 +1,28 @@
+{
+  "name": "dncrht.github.io",
+  "version": "1.0.0",
+  "dependencies": {
+    "css-loader": "0.24.0",
+    "extract-text-webpack-plugin": "1.0.1",
+    "node-sass": "3.8.0",
+    "sass-loader": "4.0.0",
+    "webpack": "1.13.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "jekyll serve",
+    "dev": "webpack -d --watch --display-error-details",
+    "build": "webpack -p; jekyll build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dncrht",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dncrht/dncrht.github.io.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dncrht/dncrht.github.io/issues"
+  },
+  "homepage": "https://github.com/dncrht/dncrht.github.io#readme"
+}
