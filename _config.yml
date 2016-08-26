@@ -1,7 +1,7 @@
-title: A blog for untweetable thoughts
-description: Because tweeter is not enough
+title: Hi!
+description: Daniel Cruz - Software developer
 
-exclude: ['LICENSE', 'README.md', '.rbenv-version', 'nbproject', '*.less']
+exclude: ['LICENSE', 'README.md', '.rbenv-version', 'nbproject', '*.sass']
 
 markdown: redcarpet
-pygments: true
+highlighter: pygments

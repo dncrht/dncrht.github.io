@@ -1,2 +1,5 @@
 _site
 nbproject
+node_modules
+.DS_Store
+*log

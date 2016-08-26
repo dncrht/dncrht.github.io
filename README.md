@@ -1,4 +1,8 @@
 dncrht.github.io
 ================
 
-Blog hosted by GitHub Pages
+`jekyll serve`
+
+`npm run dev`
+
+`npm build`
