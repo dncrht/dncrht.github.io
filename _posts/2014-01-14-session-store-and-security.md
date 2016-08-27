@@ -59,11 +59,13 @@ Let's start the dev server on the _rails-2_ branch and follow these steps in you
  3. Visit `http://localhost:3000`. The header shows the session data you've just set.
 
 <p class="center-image"><img src="/public/set_session.png" alt="set session"/></p>
+
 <p class="caption">Setting a session value in the browser.</p>
 
 Session data is just the value of the cookie named `_two_session`.
 
 <p class="center-image"><img src="/public/get_session.png" alt="get session"/></p>
+
 <p class="caption">Getting the session cookie with the browser.</p>
 
 You can try to get the value of that cookie in any of the other projects: `_three_session` in _rails-3_ and `_four_session` in _rails-4_.
@@ -79,6 +81,7 @@ have access to the source code of the application you can use the built-in infra
 Get the session data in `session_data` by opening a Rails console and running the required commands:
 
 <p class="center-image"><img src="/public/decoding.png" alt="decoding"/></p>
+
 <p class="caption">How to decode the session cookie in different Rails versions.</p>
 
 ### Altering session data
@@ -92,6 +95,7 @@ session_data['option'] = 'boom'
 …regenerate the cookie…
 
 <p class="center-image"><img src="/public/encoding.png" alt="encoding"/></p>
+
 <p class="caption">How to regenerate the session cookie in different Rails versions.</p>
 
 …to get the new payload:
@@ -115,6 +119,7 @@ a very SHA1-like string. Although this session id can be tampered with using the
 techniques we've seen before, the chances that you guess a valid session id matching a current user are really low.
 
 <p class="center-image"><img src="/public/alternatives.png" alt="alternatives"/></p>
+
 <p class="caption">Configuration of several session store alternatives.</p>
 
 In order to decide which session store is right for you, you might apply different
@@ -133,6 +138,7 @@ Start the development server and then run:
 The second one writes to the session each time.
 
 <p class="center-image"><img src="/public/charts.png" alt="charts"/></p>
+
 <p class="caption">Benchmarks results.</p>
 
 Cookie-based is the fastest one. SQL-based storages are the slowest, MySQL being 1% slower

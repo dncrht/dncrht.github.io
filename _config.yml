@@ -3,5 +3,5 @@ description: Daniel Cruz - Software developer
 
 exclude: ['LICENSE', 'README.md', '.rbenv-version', 'nbproject', '*.sass']
 
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments

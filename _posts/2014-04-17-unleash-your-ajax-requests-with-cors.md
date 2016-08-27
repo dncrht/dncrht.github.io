@@ -35,7 +35,8 @@ request the resource asynchronously. The requested resource is in fact a small p
 a little JS snippet responsible of changing the race results in the main page.
 
 <p class="center-image"><img src="/public/iframe.png" alt="iframe flow"/></p>
-&#x20;<p class="caption">Poor man's AJAX.</p>
+
+<p class="caption">Poor man's AJAX.</p>
 
 The drawback with this approach is that you can't make POST requests and it is a bit hacky.
 
@@ -60,7 +61,8 @@ the button will reload the results. Exactly like the previous example, just usin
 technique.
 
 <p class="center-image"><img src="/public/ajax.png" alt="AJAX flow"/></p>
-&#x20;<p class="caption">Simplicity is the ultimate sophistication.</p>
+
+<p class="caption">Simplicity is the ultimate sophistication.</p>
 
 However, AJAX is an open door for insecurity. Your page may contain a third party script that
 silently sends your [session cookie](http://dev.housetrip.com/2014/01/14/session-store-and-security/) to another server.
@@ -103,7 +105,8 @@ The browser loads the resource, which contains pure JavaScript code.
 This code calls a callback function already present in the original page.
 
 <p class="center-image"><img src="/public/jsonp.png" alt="JSONP flow"/></p>
-&#x20;<p class="caption">JSONP in action.</p>
+
+<p class="caption">JSONP in action.</p>
 
 For convenience purposes, the script tag creation is abstracted by jQuery's `.ajax` call,
 and we might want to replace our code with:
@@ -145,7 +148,8 @@ You can see all this in action going to [http://localhost/cors](http://localhost
 the network pane in your browser and click the refresh button in the page.
 
 <p class="center-image"><img src="/public/cors.png" alt="CORS flow"/></p>
-&#x20;<p class="caption">Almost like the AJAX one with few extra headers.</p>
+
+<p class="caption">Almost like the AJAX one with few extra headers.</p>
 
 Unlike previous examples, in this case we are performing a cross origin POST request, instead
 of GET. How cool is that?
