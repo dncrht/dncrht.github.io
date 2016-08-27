@@ -7,6 +7,7 @@
 $text: #222
 $link: $text
 $light-text: #999
+$space: 60px
 
 *
   margin: 0
@@ -16,7 +17,7 @@ $light-text: #999
 body
   color: $text
   background: url(/public/bg-body.gif)
-  font: 18px 'Open Sans', Helvetica, Arial, sans-serif
+  font: 16px 'Open Sans', Helvetica, Arial, sans-serif
 
 =transform($value)
   transform: $value
@@ -49,15 +50,18 @@ h1, h2, h3, h4, h5, h6
       text-decoration: underline
 
 h1
-  margin-bottom: 40px
-  font-size: 22px
+  margin-bottom: $space
+  font-size: 24px
 
 h2
-  margin-top: 30px
-  font-size: 18px
+  margin-top: $space
+  margin-bottom: $space / 2
+  font-size: 21px
 
 h3
-  font-size: 28px
+  margin-top: $space
+  margin-bottom: $space / 2
+  font-size: 18px
 
 .centerer
   width: 980px
@@ -81,14 +85,14 @@ h3
 .content
   float: left
   width: 680px
-  padding: 60px 0 60px 30px
+  padding: 95px 0 60px 30px
 
 .more
   margin-bottom: 60px
 
 .post
-  margin: 20px 0 40px
-  ul
+  margin: ($space / 2) 0 $space
+  ul, ol
     list-style-position: inside
     padding-left: 10px
   p
@@ -97,3 +101,12 @@ h3
     padding: 10px
     border: 1px dashed #ccc
     background: #eee
+
+  .center-image
+    margin-top: $space
+    text-align: center
+
+  p.caption
+    font-size: 12px
+    text-align: center
+    margin-bottom: $space
