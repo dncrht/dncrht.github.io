@@ -48,7 +48,7 @@ Let's highlight these two priorities:
 
 - 1: code must work
 Stop here. Will the requirements eventually change? Carry on reading.
-- 2: code must be easy to understand [and optionally for machines to run](http://en.wikiquote.org/wiki/Martin_Fowler)
+- 2: code must be easy to understand [and optionally for machines to run](http://en.wikiquote.org/wiki/Martin_Fowler).
 
 They can be summarised as _make it work, then make it pretty_. Catchy, isn't it?
 
@@ -65,7 +65,7 @@ Repeat steps 1 and 2. And add the extra step:
 
 - 3: code must be easy to extend
 
-# What prevents code from scaling?
+## What prevents code from scaling?
 
 Understanding _scale_ as _growth_, what prevents scalability is basically the opposite of the above. To mention some common pitfalls:
 
@@ -81,7 +81,7 @@ Understanding _scale_ as _growth_, what prevents scalability is basically the op
 
 ProTip™: these scalability techniques not only apply to code, but to descriptive languages such as CSS as well!
 
-# In a nutshell
+## In a nutshell
 
 You've probably already noticed I'm advocating for good engineering: pragmatic and elegant. Elegance in simplicity. Pragmatism in results. Optimized when measures prove it's necessary.
 
