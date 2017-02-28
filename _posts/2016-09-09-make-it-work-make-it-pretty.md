@@ -41,7 +41,7 @@ Some useful techniques to keep code understandable are:
 - short classes and methods
 - DRY
 - single responsibility principle
-- avoid object mutation: treat instance vars as immutable properties, pass values to methods that return values
+- avoid object mutation: treat instance vars as immutable properties, constants set at instantiation. Pass values to methods that return values. You wouldn't [mutate globals](http://softwareengineering.stackexchange.com/a/148154), would you? Think of thread safety too.
 - avoid early optimization: don't optimize unless you know there's a problem. Measure first. The tradeoff when optimizing is always code clarity.
 
 Let's highlight these two priorities:
@@ -89,4 +89,4 @@ Give it a go!
 
 <hr>
 
-_Thanks to [Paul Tsochantaris](http://bru) for proofreading!_
+_Thanks to [Paul Tsochantaris](http://bru.build) for proofreading!_
