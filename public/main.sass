@@ -17,7 +17,7 @@ $space: 60px
 body
   color: $text
   background: url(/public/bg-body.gif)
-  font: 16px 'Open Sans', Helvetica, Arial, sans-serif
+  font: 16px Helvetica, Arial, sans-serif
 
 =transform($value)
   transform: $value
@@ -40,9 +40,16 @@ a
 p a
   color: $text
 
+.red
+  color: red
+.green
+  color: #0d0
+.refactor
+  color: #11f
+
 h1, h2, h3, h4, h5, h6
   color: $link
-  font-family: "Arvo"
+  font-family: 'Arvo'
   a
     color: $link
     text-decoration: none
@@ -95,12 +102,19 @@ h3
   ul, ol
     list-style-position: inside
     padding-left: 10px
+  blockquote
+    background: #e3e3e3
+    text-align: center
+    font-style: italic
+    padding: 10px
+    font-size: 1.2em
   p
     margin: 10px 0
   .highlight
     padding: 10px
     border: 1px dashed #ccc
-    background: #eee
+    background: #fff
+    font-size: 0.8em
 
   .center-image
     margin-top: $space
