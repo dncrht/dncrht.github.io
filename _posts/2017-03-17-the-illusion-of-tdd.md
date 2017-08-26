@@ -1,5 +1,6 @@
 ---
 layout: post
+title: The illusion of TDD
 ---
 
 In my view, TDD has become a mirage, an illusion. Something that everybody claim they do or see, but doesn't actually exist.
@@ -31,7 +32,7 @@ Let's see this in detail:
 
 ## What's not TDD?
 
-We've said TDD ensures you understand the requirements and the purpose and allows you to write better code by freezing the requirements. It forces forces you into a process known as red-green-refactor.
+We've said TDD ensures you understand the requirements and the purpose and allows you to write better code by freezing the requirements. It forces you into a process known as red-green-refactor.
 
 So… then what is not TDD? Following the definition we've given, the main condition to do TDD with all the benefits highlighted before, is to have tests driving your development. Sounds naïve, yeah.
 
