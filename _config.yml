@@ -1,4 +1,4 @@
-title: Hi!
+title: dncrht's blog
 description: Daniel Cruz - Software developer
 
 exclude: ['LICENSE', 'README.md', '.rbenv-version', 'nbproject', '*.sass']
