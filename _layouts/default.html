@@ -2,7 +2,13 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>{{ site.title }}</title>
+    <title>
+      {% if page.title %}
+        {{ page.title }} — {{ site.title }}
+      {% else %}
+        {{ site.title }}
+      {% endif %}
+    </title>
     <link rel="alternate" type="application/atom+xml" title="Atom feed" href="/feed.xml" />
     <link href='http://fonts.googleapis.com/css?family=Arvo:700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
