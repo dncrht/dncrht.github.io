@@ -7,6 +7,8 @@
 $text: #222
 $link: $text
 $light-text: #999
+$nav-text: #fff
+$nav-bg: #18007b
 $space: 60px
 
 *
@@ -16,7 +18,7 @@ $space: 60px
 
 body
   color: $text
-  background: url(/public/bg-body.gif)
+  background: $nav-bg
   font: 16px Helvetica, Arial, sans-serif
 
 =transform($value)
@@ -61,44 +63,44 @@ h1
   font-size: 24px
 
 h2
-  margin-top: $space
   margin-bottom: $space / 2
   font-size: 21px
 
 h3
-  margin-top: $space
   margin-bottom: $space / 2
   font-size: 18px
 
-.centerer
-  width: 980px
-  height: 700px
-  margin: 0 auto
-
 .navigation
+  box-sizing: border-box
   float: left
-  width: 240px
-  height: 100%
+  width: 30%
   text-align: right
-  padding: 95px 30px 0 0
+  padding: 95px 6% 0 6%
+  color: $nav-text
   p
     font-size: 16px
     margin-bottom: 40px
+  a
+    color: $nav-text
 
 .date
   color: $light-text
   font-size: 14px
 
 .content
+  box-sizing: border-box
   float: left
-  width: 680px
-  padding: 95px 0 60px 30px
+  background: url(/public/bg-body.gif)
+  width: 70%
+  padding: 95px 6% 0 6%
 
 .more
   margin-bottom: 60px
 
 .post
   margin: ($space / 2) 0 $space
+  h2, h3
+    margin-top: $space
   ul, ol
     list-style-position: inside
     padding-left: 10px

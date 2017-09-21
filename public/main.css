@@ -10,7 +10,7 @@
 
 body {
   color: #222;
-  background: url(/public/bg-body.gif);
+  background: #18007b;
   font: 16px Helvetica, Arial, sans-serif; }
 
 /*****************************************************************************/
@@ -52,44 +52,44 @@ h1 {
   font-size: 24px; }
 
 h2 {
-  margin-top: 60px;
   margin-bottom: 30px;
   font-size: 21px; }
 
 h3 {
-  margin-top: 60px;
   margin-bottom: 30px;
   font-size: 18px; }
 
-.centerer {
-  width: 980px;
-  height: 700px;
-  margin: 0 auto; }
-
 .navigation {
+  box-sizing: border-box;
   float: left;
-  width: 240px;
-  height: 100%;
+  width: 30%;
   text-align: right;
-  padding: 95px 30px 0 0; }
+  padding: 95px 6% 0 6%;
+  color: #fff; }
   .navigation p {
     font-size: 16px;
     margin-bottom: 40px; }
+  .navigation a {
+    color: #fff; }
 
 .date {
   color: #999;
   font-size: 14px; }
 
 .content {
+  box-sizing: border-box;
   float: left;
-  width: 680px;
-  padding: 95px 0 60px 30px; }
+  background: url(/public/bg-body.gif);
+  width: 70%;
+  padding: 95px 6% 0 6%; }
 
 .more {
   margin-bottom: 60px; }
 
 .post {
   margin: 30px 0 60px; }
+  .post h2, .post h3 {
+    margin-top: 60px; }
   .post ul, .post ol {
     list-style-position: inside;
     padding-left: 10px; }
