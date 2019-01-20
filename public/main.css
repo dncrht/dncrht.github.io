@@ -8,18 +8,16 @@
   padding: 0;
   line-height: 1.7em; }
 
-body {
-  color: #222;
-  background: #18007b;
-  font: 16px Helvetica, Arial, sans-serif; }
-
 /*****************************************************************************/
 /* */
 /* Home */
 /* */
 /*****************************************************************************/
 body {
-  margin: 0; }
+  display: flex;
+  margin: 0;
+  color: #222;
+  font: 16px Helvetica, Arial, sans-serif; }
 
 a {
   text-decoration: underline; }
@@ -61,11 +59,11 @@ h3 {
 
 .navigation {
   box-sizing: border-box;
-  float: left;
   width: 30%;
   text-align: right;
   padding: 95px 6% 0 6%;
-  color: #fff; }
+  color: #fff;
+  background: #18007b; }
   .navigation p {
     font-size: 16px;
     margin-bottom: 40px; }
@@ -78,7 +76,6 @@ h3 {
 
 .content {
   box-sizing: border-box;
-  float: left;
   background: url(/public/bg-body.gif);
   width: 70%;
   padding: 95px 6% 0 6%; }
