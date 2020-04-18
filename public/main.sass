@@ -28,6 +28,7 @@ $space: 60px
 
 body
   display: flex
+  min-height: 100vh
   margin: 0
   color: $text
   font: 16px Helvetica, Arial, sans-serif
@@ -68,7 +69,7 @@ h3
   margin-bottom: $space / 2
   font-size: 18px
 
-.navigation
+nav
   box-sizing: border-box
   width: 30%
   text-align: right
@@ -85,7 +86,7 @@ h3
   color: $light-text
   font-size: 14px
 
-.content
+main
   box-sizing: border-box
   background: url(/public/bg-body.gif)
   width: 70%
@@ -109,7 +110,7 @@ h3
     font-size: 1.2em
   p
     margin: 10px 0
-  .highlight
+  pre.highlight
     padding: 10px
     border: 1px dashed #ccc
     background: #fff

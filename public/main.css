@@ -15,6 +15,7 @@
 /*****************************************************************************/
 body {
   display: flex;
+  min-height: 100vh;
   margin: 0;
   color: #222;
   font: 16px Helvetica, Arial, sans-serif; }
@@ -57,24 +58,24 @@ h3 {
   margin-bottom: 30px;
   font-size: 18px; }
 
-.navigation {
+nav {
   box-sizing: border-box;
   width: 30%;
   text-align: right;
   padding: 95px 6% 0 6%;
   color: #fff;
   background: #18007b; }
-  .navigation p {
+  nav p {
     font-size: 16px;
     margin-bottom: 40px; }
-  .navigation a {
+  nav a {
     color: #fff; }
 
 .date {
   color: #999;
   font-size: 14px; }
 
-.content {
+main {
   box-sizing: border-box;
   background: url(/public/bg-body.gif);
   width: 70%;
@@ -98,7 +99,7 @@ h3 {
     font-size: 1.2em; }
   .post p {
     margin: 10px 0; }
-  .post .highlight {
+  .post pre.highlight {
     padding: 10px;
     border: 1px dashed #ccc;
     background: #fff;
