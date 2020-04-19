@@ -1,5 +1,6 @@
 ---
 layout: post
+published: false
 ---
 Specially with code bases you're unfamiliar with, it's quite hard to determine which code is handling a given event. You grep through the code randomly searching for the needle in the haystack. It's not the most efficient way as you can see.
 
