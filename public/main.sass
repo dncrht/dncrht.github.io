@@ -110,11 +110,15 @@ main
     font-size: 1.2em
   p
     margin: 10px 0
-  pre.highlight
+  pre.highlight, article.highlight
     padding: 10px
     border: 1px dashed #ccc
     background: #fff
     font-size: 0.8em
+  article.highlight
+    font-family: monospace
+    white-space: pre-line
+    font-size: 0.7rem
 
   .center-image
     margin-top: $space
@@ -124,3 +128,18 @@ main
     font-size: 12px
     text-align: center
     margin-bottom: $space
+
+  .flex
+    display: flex
+    justify-content: space-around
+    margin: $space 0
+    p
+      padding: 16px
+      img
+        max-width: 100%
+
+  table
+    td
+      vertical-align: top
+      padding-right: 8px
+      padding-bottom: 8px

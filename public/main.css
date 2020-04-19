@@ -99,11 +99,15 @@ main {
     font-size: 1.2em; }
   .post p {
     margin: 10px 0; }
-  .post pre.highlight {
+  .post pre.highlight, .post article.highlight {
     padding: 10px;
     border: 1px dashed #ccc;
     background: #fff;
     font-size: 0.8em; }
+  .post article.highlight {
+    font-family: monospace;
+    white-space: pre-line;
+    font-size: 0.7rem; }
   .post .center-image {
     margin-top: 60px;
     text-align: center; }
@@ -111,5 +115,17 @@ main {
     font-size: 12px;
     text-align: center;
     margin-bottom: 60px; }
+  .post .flex {
+    display: flex;
+    justify-content: space-around;
+    margin: 60px 0; }
+    .post .flex p {
+      padding: 16px; }
+      .post .flex p img {
+        max-width: 100%; }
+  .post table td {
+    vertical-align: top;
+    padding-right: 8px;
+    padding-bottom: 8px; }
 
 /*# sourceMappingURL=main.css.map*/
