@@ -1,5 +1,6 @@
 ---
 layout: post
+title: Aceleración GPU Para Video Flash
 ---
 No es ningún descubrimiento nuevo afirmar que Flash es un devorador de recursos y que está hecho para
 Windows, con un port para Linux bastante descuidado.
@@ -20,14 +21,14 @@ Tener una gráfica que soporte aceleración es la única manera de reproducir v�
 ¿Compensa comprarse un equipo con un procesador peor y suplir sus peores prestaciones en reproducción de vídeo con una gráfica mejor?
 
 ```
-AMD PHENOM II X4 925 2.8GHZ SKT AM3 109.23
-ASUS M4N68T-M 54
-XFX GT220 1GB 54,33
+CPU: AMD PHENOM II X4 925 2.8GHZ SKT AM3 109.23
+MB: ASUS M4N68T-M 54
+GPU: XFX GT220 1GB 54,33
 ```
-
+_vs_
 ```
-INTEL CORE i3 540 3.06 GHZ SK1156 4MB 121,65
-INTEL CORE i3/i5/i7 GIGABYTE H55M-S2 SK1156 DDR3 PCX M-ATX 77,97
+CPU+GPU: INTEL CORE i3 540 3.06 GHZ SK1156 4MB 121,65
+MB: INTEL CORE i3/i5/i7 GIGABYTE H55M-S2 SK1156 DDR3 PCX M-ATX 77,97
 ```
 
 Yo diría que no compensa pues:
