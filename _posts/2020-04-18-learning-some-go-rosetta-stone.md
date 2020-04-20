@@ -11,10 +11,10 @@ Nowadays, the Rosetta Stone is displayed at the British Museum. If you wonder ho
 
 <div class="flex">
 <p class="image">
-<img src="/public/british_museum.jpg"/>
+<img src="/public/british_museum.jpg" width="50%"/>
 </p>
 <p class="image">
-<img src="/public/rosetta_stone.jpg" />
+<img src="/public/rosetta_stone.jpg" width="50%" />
 </p>
 </div>
 
@@ -24,7 +24,7 @@ Finally, last month I faced some sluggishness at work on some Ruby code we use t
 
 I thought there could be a chance to write that part in a different, faster language. Motivated by [these benchmarks](https://benchmarksgame-team.pages.debian.net/benchmarksgame/fastest/go.html) and my past experience with C (too raw), Java (memory hungry), PHP (ugly) and Python (slow) I decided to jump into the unknown and _do something exciting_ such as learning a new language: Go!
 
-Golang is fast, and in terms of language design philosophy, feels like Python to me because its simplicity. Sometimes, even too simple and bare. Feels like C too, but does not let you blow up your foot.
+Golang is fast, produces very small binaries and does not require lots of memory to run. In terms of language design philosophy, feels like Python to me because its simplicity. Sometimes, even too simple and bare. Feels like C too, but does not let you blow up your foot.
 In any case, a 100% orthogonal depart from Ruby.
 
 I've done 2 toy projects so far, an [HTML to PDF conversion server](https://github.com/dncrht/pdfactory) and a [Markdown wiki](https://github.com/dncrht/kwik), and I can list some features any Rubyist will surely find odd:
@@ -45,23 +45,33 @@ Here it is such stone, for Ruby, Python and Go:
     <th>Python</th>
     <th>Ruby</th>
   </tr>
+
   <tr>
     <td>
-<article class="highlight">true
+<article class="highlight">
+{% highlight go %}
+true
 false
 nil
+{% endhighlight %}
 </article>
     </td>
     <td>
-<article class="highlight">True
+<article class="highlight">
+{% highlight python %}
+True
 False
 None
+{% endhighlight %}
 </article>
     </td>
     <td>
-<article class="highlight">true
+<article class="highlight">
+{% highlight ruby %}
+true
 false
 nil
+{% endhighlight %}
 </article>
     </td>
   </tr>
@@ -71,43 +81,65 @@ nil
   </tr>
   <tr>
     <td>
-<article class="highlight">x == nil</article>
+<article class="highlight">
+{% highlight go %}
+x == nil
+{% endhighlight %}
+</article>
     </td>
     <td>
-<article class="highlight">x is None</article>
+<article class="highlight">
+{% highlight python %}
+x is None
+{% endhighlight %}
+</article>
     </td>
     <td>
-<article class="highlight">x.nil?</article>
+<article class="highlight">
+{% highlight ruby %}
+x.nil?
+{% endhighlight %}
+</article>
     </td>
   </tr>
+
   <tr>
     <td>
-<article class="highlight">if condition {
-&nbsp;&nbsp;…
+<article class="highlight">
+{% highlight go %}
+if condition {
+  …
 } else if condition {
-&nbsp;&nbsp;…
+  …
 } else {
-&nbsp;&nbsp;…
+  …
 }
+{% endhighlight %}
 </article>
     </td>
     <td>
-<article class="highlight">if condition:
-&nbsp;&nbsp;…
+<article class="highlight">
+{% highlight python %}
+if condition:
+  …
 elif condition:
-&nbsp;&nbsp;…
+  …
 else:
-&nbsp;&nbsp;…
+  …
+{% endhighlight %}
 </article>
     </td>
     <td>
-<article class="highlight">if condition
-&nbsp;&nbsp;…
+<article class="highlight">
+{% highlight ruby %}
+if condition
+  …
 elsif condition
-&nbsp;&nbsp;…
+  …
 else
-&nbsp;&nbsp;…
+  …
 end
+{% endhighlight %}
 </article>
     </td>
   </tr>
@@ -117,62 +149,91 @@ end
   </tr>
   <tr>
     <td>
-<article class="highlight">for condition {
-&nbsp;&nbsp;…
+<article class="highlight">
+{% highlight go %}
+for condition {
+  …
 }
+{% endhighlight %}
 </article>
     </td>
     <td>
-<article class="highlight">while condition:
-&nbsp;&nbsp;…
+<article class="highlight">
+{% highlight python %}
+while condition:
+  …
+{% endhighlight %}
 </article>
     </td>
     <td>
-<article class="highlight">while condition
-&nbsp;&nbsp;…
+<article class="highlight">
+{% highlight ruby %}
+while condition
+  …
 end
+{% endhighlight %}
 </article>
     </td>
   </tr>
+
   <tr>
     <td>
-<article class="highlight">for {
-&nbsp;&nbsp;…
-&nbsp;&nbsp;if condition {break}
+<article class="highlight">
+{% highlight go %}
+for {
+  …
+  if condition {break}
 }
+{% endhighlight %}
 </article>
     </td>
     <td>
-<article class="highlight">while True:
-&nbsp;&nbsp;…
-&nbsp;&nbsp;if condition:
-&nbsp;&nbsp;&nbsp;&nbsp;break
+<article class="highlight">
+{% highlight python %}
+while True:
+  …
+  if condition:
+    break
+{% endhighlight %}
 </article>
     </td>
     <td>
-<article class="highlight">loop do
-&nbsp;&nbsp;…
-&nbsp;&nbsp;break if condition
+<article class="highlight">
+{% highlight ruby %}
+loop do
+  …
+  break if condition
 end
+{% endhighlight %}
 </article>
     </td>
   </tr>
+
   <tr>
     <td>
-<article class="highlight">for key, value := range myMap {
-&nbsp;&nbsp;…
+<article class="highlight">
+{% highlight go %}
+for key, value := range myMap {
+  …
 }
+{% endhighlight %}
 </article>
     </td>
     <td>
-<article class="highlight">for key, value in my_dictionary:
-&nbsp;&nbsp;…
+<article class="highlight">
+{% highlight python %}
+for key, value in my_dictionary:
+  …
+{% endhighlight %}
 </article>
     </td>
     <td>
-<article class="highlight">my_hash.each do |key, value|
-&nbsp;&nbsp;…
+<article class="highlight">
+{% highlight ruby %}
+my_hash.each do |key, value|
+  …
 end
+{% endhighlight %}
 </article>
     </td>
   </tr>
@@ -182,7 +243,9 @@ end
   </tr>
   <tr>
     <td>
-<article class="highlight">import "sort"
+<article class="highlight">
+{% highlight go %}
+import "sort"
 my_slice := []int{} // also: var my_slice []int
 my_slice = append(my_slice, 79)
 my_slice = append(my_slice, 19)
@@ -191,10 +254,12 @@ sort.Ints(b) // sort is always in-place
 sort.Ints(my_slice)
 import "reflect"
 reflect.DeepEqual(my_slice, b)
+{% endhighlight %}
 </article>
     </td>
     <td>
 <article class="highlight">
+{% highlight python %}
 my_array = []
 my_array.append(79)
 my_array.append(19)
@@ -202,10 +267,12 @@ b = sorted(my_array)
 my_array.sort()
 my_array == b
 len(my_array) == 2
+{% endhighlight %}
 </article>
     </td>
     <td>
 <article class="highlight">
+{% highlight ruby %}
 my_array = []
 my_array << 79
 my_array.append 19
@@ -213,6 +280,7 @@ b = my_array.sort
 my_array.sort!
 my_array == b
 my_array.length == 2
+{% endhighlight %}
 </article>
     </td>
   </tr>
@@ -222,62 +290,77 @@ my_array.length == 2
   </tr>
   <tr>
     <td>
-<article class="highlight">import "strconv"
+<article class="highlight">
+{% highlight go %}
+import "strconv"
 var myMap = map[string]string{}
 for i, value := range [3]int{5,6,7} {
-&nbsp;&nbsp;myMap[strconv.Itoa(i)] = strconv.Itoa(value)
+  myMap[strconv.Itoa(i)] = strconv.Itoa(value)
 }
+{% endhighlight %}
 </article>
     </td>
     <td>
 <article class="highlight">
+{% highlight python %}
 my_dictionary = {}
 for i, value in enumerate([5,6,7]):
-&nbsp;&nbsp;my_dictionary[str(i)] = str()
+  my_dictionary[str(i)] = str()
+{% endhighlight %}
 </article>
     </td>
     <td>
 <article class="highlight">
+{% highlight ruby %}
 my_hash = {}
 [5,6,7].each_with_index do |value, i|
-&nbsp;&nbsp;my_hash[i.to_s] = value.to_s
+  my_hash[i.to_s] = value.to_s
 end
+{% endhighlight %}
 </article>
     </td>
   </tr>
+
   <tr>
     <td>
-<article class="highlight">import "strconv"
+<article class="highlight">
+{% highlight go %}
+import "strconv"
 var myMap = map[string]string{}
 for i, value := range [3]int{5,6,7} {
-&nbsp;&nbsp;myMap[strconv.Itoa(i)] = "a" + strconv.Itoa(value)
+  myMap[strconv.Itoa(i)] = "a" + strconv.Itoa(value)
 }
 values := make([]string, 0, len(myMap))
 for _, val := range myMap {
-&nbsp;&nbsp;values = append(values, val)
+  values = append(values, val)
 }
 if _, ok := myMap["1"]; ok {
-&nbsp;&nbsp;…
+  …
 }
+{% endhighlight %}
 </article>
     </td>
     <td>
 <article class="highlight">
+{% highlight python %}
 my_dictionary = {}
 for i, value in enumerate([5,6,7]):
-&nbsp;&nbsp;my_dictionary[str(i)] = "a" + str(value)
+  my_dictionary[str(i)] = "a" + str(value)
 values = values(my_dictionary)
 if "1" in my_dictionary: …
+{% endhighlight %}
 </article>
     </td>
     <td>
 <article class="highlight">
+{% highlight ruby %}
 my_hash = {}
 [5,6,7].each_with_index do |value, i|
-&nbsp;&nbsp;my_hash[i.to_s] = 'a' + value.to_s
+  my_hash[i.to_s] = 'a' + value.to_s
 end
 values = my_hash.values
 if my_hash.include?('1') then … end
+{% endhighlight %}
 </article>
     </td>
   </tr>
@@ -287,27 +370,36 @@ if my_hash.include?('1') then … end
   </tr>
   <tr>
     <td>
-<article class="highlight">import "regexp"
+<article class="highlight">
+{% highlight go %}
+import "regexp"
 if match, _ := regexp.MatchString("ab", "ab ac ab ad") {
-&nbsp;&nbsp;…
+  …
 }
 r := regexp.MustCompile("ab")
 r.FindAllString("ab ac ab ad", -1) // []string{"ab", "ab"}
-r.FindString("ab ac ab ad") // "ab"</article>
+r.FindString("ab ac ab ad") // "ab"
+{% endhighlight %}
+</article>
   </td>
   <td>
-<article class="highlight">import re
+<article class="highlight">
+{% highlight python %}
+import re
 if re.match(r'ab', 'ab ac ab ad') is not None: …
 re.findall(r'ab', 'ab ac ab ad') # ['ab', 'ab']
 m = re.match(r'ab', 'ab ac ab ad')
 m.group(0) # 'ab'
+{% endhighlight %}
 </article>
     </td>
     <td>
 <article class="highlight">
+{% highlight ruby %}
 if 'ab ac ab ad' =~ /ab/ then …
 'ab ac ab ad'.scan /ab/ # ["ab", "ab"]
 m = 'ab ac ab ad'.match /ab/; m[0] # 'ab'
+{% endhighlight %}
 </article>
     </td>
   </tr>
