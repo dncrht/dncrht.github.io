@@ -27,11 +27,35 @@ $space: 60px
 /*****************************************************************************/
 
 body
-  display: flex
-  min-height: 100vh
   margin: 0
   color: $text
   font: 16px Helvetica, Arial, sans-serif
+
+.home-body
+  display: flex
+  min-height: 100vh
+
+.container
+  margin: 0 auto
+  padding: 0 10px
+@media (min-width: 576px)
+  .container
+    max-width: 540px
+@media (min-width: 768px)
+  .container
+    max-width: 720px
+@media (min-width: 992px)
+  .container
+    max-width: 960px
+@media (min-width: 1200px)
+  .container
+    max-width: 1140px
+
+header
+  padding: ($space / 2) 0
+  background: $nav-bg
+  h1
+    color: $nav-text
 
 a
   text-decoration: underline
@@ -58,7 +82,6 @@ h1, h2, h3, h4, h5, h6
       text-decoration: underline
 
 h1
-  margin-bottom: $space
   font-size: 24px
 
 h2
@@ -87,8 +110,10 @@ nav
   font-size: 14px
 
 main
-  box-sizing: border-box
   background: url(/public/bg-body.gif)
+
+.home
+  box-sizing: border-box
   width: 70%
   padding: 95px 6% 0 6%
 
@@ -96,7 +121,7 @@ main
   margin-bottom: 60px
 
 .post
-  margin: ($space / 2) 0 $space
+  padding: ($space / 2) 0 $space
   h2, h3
     margin-top: $space
   ul, ol
@@ -117,11 +142,14 @@ main
     font-size: 0.8em
   article.highlight
     font-family: monospace
-    white-space: pre-line
+    //white-space: pre-line
     font-size: 0.7rem
 
   .center-image
     margin-top: $space
+    text-align: center
+
+  .image
     text-align: center
 
   p.caption
@@ -139,6 +167,7 @@ main
         max-width: 100%
 
   table
+    width: 100%
     td
       vertical-align: top
       padding-right: 8px
